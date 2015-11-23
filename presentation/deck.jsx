@@ -10,12 +10,52 @@ import preloader from "../src/utils/preloader";
 import Interactive from "./interactive";
 
 const images = {
-  city: require("./city.jpg"),
   kat: require("./kat.png"),
-  logo: require("./formidable-logo.svg")
+  logo: require("./formidable-logo.svg"),
+  Choir: require("./Choir.jpg"),
+  python: require("./python.png"),
+  javascript: require("./javascript.png"),
+  htmlandcss: require("./htmcss.png"),
+  bootstrap: require("./Bootstrap.jpg"),
+  jquery: require("./jquery.jpg"),
+  git: require("./git.png"),
+  flask: require("./xFlask.png"),
+  jinja: require("./jinja2.png"),
+  tornado: require("./tornado.png"),
+  coffee: require("./coffee.png"),
+  selenium: require("./selenium.png"),
+  splunk: require("./splunk_logo.jpg"),
+  jenkins: require("./jenkins.png"),
+  puppet: require("./puppet.png"),
+  atlassian: require("./atlassian.png"),
+  ubuntu: require("./ubuntu.png"),
+  csharp: require("./csharp.png"),
+  dotnet: require("./dotnet.png"),
+  ef: require("./ef.jpg"),
+  nhibernate: require("./NHibernate.png"),
+  sql: require("./sql.jpg"),
+  api: require("./webapi.png"),
+  teamcityoctopus: require("./tc-od.gif"),
+  nunit: require("./nunit.png"),
+  nuget: require("./nuget.png"),
+  tortoise: require("./tortoise.jpg"),
+  eventstore: require("./eventstore.png"),
+  rabbit: require("./rabbitmq.png"),
+  yeoman: require("./yeoman.png"),
+  ko: require("./ko.jpg"),
+  react: require("./react-js.png"),
+  surge: require("./surge.png"),
+  vs: require("./visual-studio.png"),
+  vscode: require("./vscode.png"),
+  eclipse: require("./eclipse.png"),
+  atom: require("./atom.png"),
+  sublime: require("./sublime.jpg"),
+  vagrant: require("./vagrant.png"),
+  raspberry: require("./raspberrypi.png"),
+  riak: require("./riak.png"),
 };
 
-preloader([images.city, images.kat]);
+preloader([images.kat, images.Choir]);
 
 export default class extends Component {
   render() {
@@ -23,18 +63,16 @@ export default class extends Component {
       <Deck transition={["zoom", "slide"]} transitionDuration={800}>
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="black">
-            Spectacle
+            Year 1 
           </Heading>
-          <Heading size={1} fit caps>
-            A ReactJS Presentation Library
+          <Heading>
+          at HSCIC
           </Heading>
-          <Heading size={1} fit caps textColor="black">
-            Where You Can Write Your Decks In JSX
+          <Heading textColor="black">
+            By Matthew Puzey
           </Heading>
-          <Link href="https://github.com/FormidableLabs/spectacle">
-            <Text bold caps textColor="tertiary">View on Github</Text>
-          </Link>
-          <Text textSize="1.5em" margin="20px 0px 0px" bold>Hit Your Right Arrow To Begin!</Text>
+          
+          <Text textSize="1.5em" margin="20px 0px 0px" bold>Using ReactJS</Text>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
@@ -42,8 +80,8 @@ export default class extends Component {
           Contents
         </Heading> 
           <List>
-            <ListItem><Appear fid="1">My Background</Appear></ListItem>
-            <ListItem><Appear fid="2">What I've learned so far</Appear></ListItem>
+            <ListItem><Appear fid="1">Me and my Background</Appear></ListItem>
+            <ListItem><Appear fid="2">What I've learned this year</Appear></ListItem>
             <ListItem><Appear fid="3">'</Appear></ListItem>
           </List>
         </Slide>
@@ -63,22 +101,17 @@ export default class extends Component {
           />
         </Slide>
 
-        <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.Choir.replace("/", "")} bgDarken={0.75}>
           <Appear fid="1">
-            <Heading size={1} caps fit textColor="primary">
-              Full Width
+            <Heading size={4} caps fit textColor="primary">
+              Lichfield
             </Heading>
           </Appear>
-          <Appear fid="2">
-            <Heading size={1} caps fit textColor="tertiary">
-              Adjustable Darkness
-            </Heading>
-          </Appear>
-          <Appear fid="3">
-            <Heading size={1} caps fit textColor="primary">
-              Background Imagery
-            </Heading>
-          </Appear>
+           <List textColor='white'>
+           <ListItem><Appear fid="1">Sleepy Staffordshire town</Appear></ListItem>
+            <ListItem><Appear fid="2">Birthplace of Samuel Johnson and Erasmus Darwin</Appear></ListItem>
+            <ListItem><Appear fid="3">...(and me)</Appear></ListItem>
+          </List>
         </Slide>
 
         <Slide transition={["zoom", "fade"]} bgColor="primary">
@@ -104,24 +137,73 @@ export default class extends Component {
           </BlockQuote>
         </Slide>
 
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Smooth
-          </Heading>
-          <Heading caps fit size={1} textColor="secondary">
-            Combinable Transitions
-          </Heading>
+        <Slide transition={["slide", "spin"]} bgColor="tertiary">
+         <BlockQuote>
+            <Quote>Technologies</Quote>
+            <Cite textColor="secondary">Spincore</Cite>
+          </BlockQuote>
+          <br></br>
+          <Appear fid="1">
+          <Image src={images.python.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.javascript.replace("/", "")} margin="0px auto 40px" height="140px"/>
+          <Image src={images.htmlandcss.replace("/", "")} margin="0px auto 40px" height="140px"/>
+          <Image src={images.bootstrap.replace("/", "")} margin="0px auto 40px" height="90px"/>
+          <Image src={images.jquery.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.git.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.flask.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          </Appear>
+          <Appear fid="2">
+          <Image src={images.jinja.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.tornado.replace("/", "")} margin="0px auto 40px" height="140px"/>
+          <Image src={images.coffee.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.selenium.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.splunk.replace("/", "")} margin="0px auto 40px" height="120px"/>
+          <Image src={images.jenkins.replace("/", "")} margin="0px auto 40px" height="120px"/>
+          <Image src={images.puppet.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.atlassian.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          </Appear>
+          <Appear fid="3">
+          <Image src={images.eclipse.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.vagrant.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.raspberry.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.ubuntu.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.riak.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          </Appear>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <List>
-            <ListItem><Appear fid="1">Inline style based theme system</Appear></ListItem>
-            <ListItem><Appear fid="2">Autofit text</Appear></ListItem>
-            <ListItem><Appear fid="3">Flexbox layout system</Appear></ListItem>
-            <ListItem><Appear fid="4">React-Router navigation</Appear></ListItem>
-            <ListItem><Appear fid="5">PDF export</Appear></ListItem>
-            <ListItem><Appear fid="6">And...</Appear></ListItem>
-          </List>
+        <Slide transition={["fade"]} bgColor="tertiary" textColor="primary">
+          <BlockQuote>
+            <Quote>Technologies</Quote>
+            <Cite textColor="secondary">IT Development</Cite>
+          </BlockQuote>
+           <br></br>
+           <Appear fid="1">
+         
+          <Image src={images.csharp.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.dotnet.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.ef.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.sql.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.nhibernate.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.nunit.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.nuget.replace("/", "")} margin="0px auto 40px" height="80px"/>
+           <Image src={images.api.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          </Appear>
+          <Appear fid="2">
+          <Image src={images.teamcityoctopus.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.eventstore.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.rabbit.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.tortoise.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.ko.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          <Image src={images.vs.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.vscode.replace("/", "")} margin="0px auto 40px" height="70px"/>
+          <Image src={images.atom.replace("/", "")} margin="0px auto 40px" height="80px"/>
+          </Appear>
+           <Appear fid="3">
+            <Image src={images.sublime.replace("/", "")} margin="0px auto 40px" height="120px"/>
+            <Image src={images.react.replace("/", "")} margin="0px auto 40px" height="120px"/>
+            <Image src={images.yeoman.replace("/", "")} margin="0px auto 40px" height="100px"/>
+            <Image src={images.surge.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          </Appear>
         </Slide>
 
         <Slide transition={["slide"]} bgColor="primary">
