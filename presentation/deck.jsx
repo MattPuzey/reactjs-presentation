@@ -10,9 +10,9 @@ import preloader from "../src/utils/preloader";
 import Interactive from "./interactive";
 
 const images = {
-  kat: require("./kat.png"),
-  logo: require("./formidable-logo.svg"),
+  kat: require("./kat.png"),logo: require("./formidable-logo.svg"),
   Choir: require("./Choir.jpg"),
+  hull: require("./hull.jpg"),
   python: require("./python.png"),
   javascript: require("./javascript.png"),
   htmlandcss: require("./htmcss.png"),
@@ -55,7 +55,11 @@ const images = {
   riak: require("./riak.png"),
 };
 
-preloader([images.kat, images.Choir]);
+preloader([images.kat, images.Choir, images.hull, images.python, images.javascript, images.htmlandcss, images.bootstrap, images.jquery, images.git, images.flask,
+  images.jinja, images.tornado, images.coffee, images.selenium, images.splunk, images.jenkins, images.puppet, images.atlassian, images.ubuntu, images.csharp,
+  images.dotnet, images.ef, images.nhibernate, images.sql, images.api, images.teamcityoctopus, images.nunit, images.nuget, images.tortoise, images.eventstore,
+  images.rabbit, images.yeoman, images.ko, images.react, images.surge, images.vs, images.vscode, images.eclipse, images.atom, images.sublime, images.vagrant,
+  images.raspberry, images.riak]);
 
 export default class extends Component {
   render() {
@@ -80,9 +84,9 @@ export default class extends Component {
           Contents
         </Heading> 
           <List>
-            <ListItem><Appear fid="1">Me and my Background</Appear></ListItem>
-            <ListItem><Appear fid="2">What I've learned this year</Appear></ListItem>
-            <ListItem><Appear fid="3">'</Appear></ListItem>
+            <ListItem><Appear fid="1">My Background</Appear></ListItem>
+            <ListItem><Appear fid="2">What I learnt this year</Appear></ListItem>
+            <ListItem><Appear fid="3"></Appear></ListItem>
           </List>
         </Slide>
       
@@ -108,33 +112,44 @@ export default class extends Component {
             </Heading>
           </Appear>
            <List textColor='white'>
-           <ListItem><Appear fid="1">Sleepy Staffordshire town</Appear></ListItem>
+            <ListItem><Appear fid="1">Sleepy Staffordshire town</Appear></ListItem>
             <ListItem><Appear fid="2">Birthplace of Samuel Johnson and Erasmus Darwin</Appear></ListItem>
             <ListItem><Appear fid="3">...(and me)</Appear></ListItem>
-          </List>
+           </List>
         </Slide>
 
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
-          <Heading caps fit>Flexible Layouts</Heading>
+        <Slide transition={["zoom", "fade"]} bgColor="black">
+          <BlockQuote>
+            <Cite>Ken Wheeler</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={["slide"]} bgImage={images.hull.replace("/", "")} bgDarken={0.75}>
+         
+         <Appear fid="1">
+          <Heading size={4} caps fit textColor="primary">
+            The University Of Hull
+          </Heading>
+        </Appear>
+        <Appear fid="2">
           <Layout>
             <Fill>
               <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                Left
-              </Heading>
-            </Fill>
-            <Fill>
-              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                Right
+                Physics with Astrophysics
               </Heading>
             </Fill>
           </Layout>
-        </Slide>
-
-        <Slide transition={["slide"]} bgColor="black">
-          <BlockQuote>
-            <Quote>Wonderfully formatted quotes</Quote>
-            <Cite>Ken Wheeler</Cite>
-          </BlockQuote>
+        </Appear>
+        <Appear fid="3">
+          <List textColor='white'>
+            <ListItem><Appear fid="1">Lasers</Appear></ListItem>
+            <ListItem><Appear fid="2">Electrodynamics</Appear></ListItem>
+            <ListItem><Appear fid="3">Thermodynamics</Appear></ListItem>
+            <ListItem><Appear fid="4">Quantum mechanics</Appear></ListItem>
+            <ListItem><Appear fid="5">Relativity</Appear></ListItem>
+            <ListItem><Appear fid="6">Stars and black holes</Appear></ListItem>
+           </List>
+        </Appear>
         </Slide>
 
         <Slide transition={["slide", "spin"]} bgColor="tertiary">
