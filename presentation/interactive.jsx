@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Heading from "../src/heading";
+import {Image} from "../src/spectacle";
+const images = { hb: require("./hb.jpg")}
 
 class Interactive extends Component {
   constructor(props) {
@@ -29,16 +31,18 @@ class Interactive extends Component {
     };
     return (
       <div>
-      {this.state.count < 5 ?
-        <div>
-          <Heading size={5} textColor="black">
-            The button has been clicked {this.state.count} times
+      {this.state.count < 12 ?
+
+         <div>
+          <Heading size={5} textColor="black" textFont="secondary">
+            The graduate scheme has been running for {this.state.count} months
           </Heading>
           <button style={styles} type="button" onClick={this.handleClick}>Click Me</button>
         </div> :
-          <Heading size={5} fit caps textColor="black">Easy there pal</Heading>
-        }
-      </div>
+        <Image src={images.hb.replace("/", "")} margin="0px auto 40px" height="400px"/>
+          
+        }   
+       </div>
     );
   }
 }

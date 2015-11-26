@@ -53,13 +53,17 @@ const images = {
   vagrant: require("./vagrant.png"),
   raspberry: require("./raspberrypi.png"),
   riak: require("./riak.png"),
+  hb: require("./hb.jpg"),
+  github: require("./GitHub.png"),
+  wordpress: require("./wordpress.png"),
+  yosemite: require("./yosemite.jpg"),
 };
 
 preloader([images.kat, images.Choir, images.hull, images.python, images.javascript, images.htmlandcss, images.bootstrap, images.jquery, images.git, images.flask,
   images.jinja, images.tornado, images.coffee, images.selenium, images.splunk, images.jenkins, images.puppet, images.atlassian, images.ubuntu, images.csharp,
   images.dotnet, images.ef, images.nhibernate, images.sql, images.api, images.teamcityoctopus, images.nunit, images.nuget, images.tortoise, images.eventstore,
   images.rabbit, images.yeoman, images.ko, images.react, images.surge, images.vs, images.vscode, images.eclipse, images.atom, images.sublime, images.vagrant,
-  images.raspberry, images.riak]);
+  images.raspberry, images.riak, images.github, images.wordpress,]);
 
 export default class extends Component {
   render() {
@@ -86,7 +90,7 @@ export default class extends Component {
           <List>
             <ListItem><Appear fid="1">My Background</Appear></ListItem>
             <ListItem><Appear fid="2">What I learnt this year</Appear></ListItem>
-            <ListItem><Appear fid="3"></Appear></ListItem>
+            <ListItem><Appear fid="3">Where I see myself at HSCIC</Appear></ListItem>
           </List>
         </Slide>
       
@@ -119,9 +123,16 @@ export default class extends Component {
         </Slide>
 
         <Slide transition={["zoom", "fade"]} bgColor="black">
-          <BlockQuote>
-            <Cite>Ken Wheeler</Cite>
-          </BlockQuote>
+          <Heading size={4} caps fit textColor="primary">
+            Interests 
+          </Heading>
+          <List textColor='white'>
+            <ListItem><Appear fid="1">Playing guitar...badly</Appear></ListItem>
+            <ListItem><Appear fid="2">Heavy Music</Appear></ListItem>
+            <ListItem><Appear fid="3">Video games</Appear></ListItem>
+            <ListItem><Appear fid="4">Beer!</Appear></ListItem>
+            <ListItem><Appear fid="5">Technology and tinkering with code</Appear></ListItem>
+           </List>
         </Slide>
 
         <Slide transition={["slide"]} bgImage={images.hull.replace("/", "")} bgDarken={0.75}>
@@ -150,6 +161,14 @@ export default class extends Component {
             <ListItem><Appear fid="6">Stars and black holes</Appear></ListItem>
            </List>
         </Appear>
+        </Slide>
+
+         <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={1} caps fit textColor="primary">
+            Happy Birthday HSCIC graduate scheme! 
+          </Heading>
+          <Interactive/>
+
         </Slide>
 
         <Slide transition={["slide", "spin"]} bgColor="tertiary">
@@ -181,7 +200,7 @@ export default class extends Component {
           <Image src={images.eclipse.replace("/", "")} margin="0px auto 40px" height="100px"/>
           <Image src={images.vagrant.replace("/", "")} margin="0px auto 40px" height="80px"/>
           <Image src={images.raspberry.replace("/", "")} margin="0px auto 40px" height="100px"/>
-          <Image src={images.ubuntu.replace("/", "")} margin="0px auto 40px" height="100px"/>
+          <Image src={images.ubuntu.replace("/", "")} margin="0px auto 40px" height="90px"/>
           <Image src={images.riak.replace("/", "")} margin="0px auto 40px" height="100px"/>
           </Appear>
         </Slide>
@@ -220,19 +239,44 @@ export default class extends Component {
             <Image src={images.surge.replace("/", "")} margin="0px auto 40px" height="100px"/>
           </Appear>
         </Slide>
+        <Slide bgColor="tertiary">
+          
+          <Appear fid="1">
+            <Heading size={4} caps fit textColor="primary">
+              What else?
+            </Heading>
+          </Appear>
+          <Appear fid="2">
+            <Layout>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                </Heading>
+              </Fill>
+            </Layout>
+          </Appear>
 
-        <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} caps fit textColor="tertiary">
-            Your presentations are interactive
-          </Heading>
-          <Interactive/>
+          <List textColor='secondary'>
+              <ListItem><Appear fid="1">Processes</Appear></ListItem>
+              <ListItem><Appear fid="2">Agile</Appear></ListItem>
+              <ListItem><Appear fid="3">Self confidence</Appear></ListItem>
+              <ListItem><Appear fid="4"></Appear></ListItem>
+              <ListItem><Appear fid="5"></Appear></ListItem>
+              <ListItem><Appear fid="6">Where I fit into HSCIC</Appear></ListItem>
+          </List>
         </Slide>
-
-        <Slide transition={["spin", "slide"]} bgColor="tertiary">
+       
+        <Slide transition={["spin", "slide"]} bgColor="tertiary" bgImage={images.yosemite.replace("/", "")}>
           <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-            Made with love in Seattle by
+            Find me at GitHub and wordpress
           </Heading>
-          <Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
+          <Heading size={5} textColor="tertiary">
+            https://github.com/MattPuzey
+          </Heading>
+          <Link href="https://github.com/MattPuzey"><Image src={images.github} margin="0px auto 40px" height="100px"/></Link>
+          <Heading size={5} textColor="tertiary">
+            https://matthewpuzeyblog.wordpress.com/
+          </Heading>
+          <Link href="matthewpuzeyblog.wordpress.com/"><Image src={images.wordpress} margin="0px auto 40px" height="80px"/></Link>
         </Slide>
       </Deck>
     );
