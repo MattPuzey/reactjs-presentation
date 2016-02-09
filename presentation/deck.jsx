@@ -89,7 +89,7 @@ export default class extends Component {
         </Heading> 
           <List>
             <ListItem><Appear fid="1">My Background</Appear></ListItem>
-            <ListItem><Appear fid="2">What I learnt this year</Appear></ListItem>
+            <ListItem><Appear fid="2">What I have learned this year</Appear></ListItem>
             <ListItem><Appear fid="3">Where I see myself at HSCIC</Appear></ListItem>
           </List>
         </Slide>
@@ -119,19 +119,6 @@ export default class extends Component {
             <ListItem><Appear fid="1">Sleepy Staffordshire town</Appear></ListItem>
             <ListItem><Appear fid="2">Birthplace of Samuel Johnson and Erasmus Darwin</Appear></ListItem>
             <ListItem><Appear fid="3">...(and me)</Appear></ListItem>
-           </List>
-        </Slide>
-
-        <Slide transition={["zoom", "fade"]} bgColor="black">
-          <Heading size={4} caps fit textColor="primary">
-            Interests 
-          </Heading>
-          <List textColor='white'>
-            <ListItem><Appear fid="1">Playing guitar...badly</Appear></ListItem>
-            <ListItem><Appear fid="2">Heavy Music</Appear></ListItem>
-            <ListItem><Appear fid="3">Video games</Appear></ListItem>
-            <ListItem><Appear fid="4">Beer!</Appear></ListItem>
-            <ListItem><Appear fid="5">Technology and tinkering with code</Appear></ListItem>
            </List>
         </Slide>
 
@@ -239,8 +226,9 @@ export default class extends Component {
             <Image src={images.surge.replace("/", "")} margin="0px auto 40px" height="100px"/>
           </Appear>
         </Slide>
-        <Slide bgColor="tertiary">
-          
+        <Slide bgColor="secondary">
+         
+        
           <Appear fid="1">
             <Heading size={4} caps fit textColor="primary">
               What else?
@@ -255,15 +243,43 @@ export default class extends Component {
             </Layout>
           </Appear>
 
-          <List textColor='secondary'>
+          <List textColor='tertiary'>
               <ListItem><Appear fid="1">Processes</Appear></ListItem>
-              <ListItem><Appear fid="2">Agile</Appear></ListItem>
-              <ListItem><Appear fid="3">Self confidence</Appear></ListItem>
-              <ListItem><Appear fid="4"></Appear></ListItem>
-              <ListItem><Appear fid="5"></Appear></ListItem>
-              <ListItem><Appear fid="6">Where I fit into HSCIC</Appear></ListItem>
+              <ListItem><Appear fid="2">Agile (workflows)</Appear></ListItem>
+              <ListItem><Appear fid="3">Common roles in field</Appear></ListItem>    
+              <ListItem><Appear fid="4">Common technical practices</Appear></ListItem>              
+              <ListItem><Appear fid="5">Best practices</Appear></ListItem>
+              <ListItem><Appear fid="6">Confidence</Appear></ListItem>
+              <ListItem><Appear fid="7">Terminology</Appear></ListItem>
+              <ListItem><Appear fid="8">Where I fit into HSCIC</Appear></ListItem>
           </List>
-        </Slide>
+              
+        </Slide> 
+        <Slide bgColor="secondary">
+         
+        
+          <Appear fid="1">
+            <Heading size={4} caps fit textColor="primary">
+              Graduates Developers and Transformation 
+            </Heading>
+          </Appear>
+          <Appear fid="2">
+            <Layout>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                </Heading>
+              </Fill>
+            </Layout>
+          </Appear>
+
+          <List textColor='tertiary'>
+              <ListItem><Appear fid="1">Transformation</Appear></ListItem>
+              <ListItem><Appear fid="2">Not tied to a technology stack</Appear></ListItem>
+              <ListItem><Appear fid="3">Transferrale technical skills</Appear></ListItem>
+              <ListItem><Appear fid="4">Familiar with HSCIC tech</Appear></ListItem>
+              <ListItem><Appear fid="5">Familiar with projects</Appear></ListItem>
+          </List>
+        </Slide> 
        
         <Slide transition={["spin", "slide"]} bgColor="tertiary" bgImage={images.yosemite.replace("/", "")}>
           <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
