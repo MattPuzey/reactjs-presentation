@@ -244,14 +244,10 @@ export default class extends Component {
           </Appear>
 
           <List textColor='tertiary'>
-              <ListItem><Appear fid="1">Processes</Appear></ListItem>
-              <ListItem><Appear fid="2">Agile (workflows)</Appear></ListItem>
-              <ListItem><Appear fid="3">Common roles in field</Appear></ListItem>    
-              <ListItem><Appear fid="4">Common technical practices</Appear></ListItem>              
-              <ListItem><Appear fid="5">Best practices</Appear></ListItem>
-              <ListItem><Appear fid="6">Confidence</Appear></ListItem>
-              <ListItem><Appear fid="7">Terminology</Appear></ListItem>
-              <ListItem><Appear fid="8">Where I fit into HSCIC</Appear></ListItem>
+              <ListItem><Appear fid="1">Domain & sector knowledge</Appear></ListItem>
+              <ListItem><Appear fid="2">Industry common knowledge</Appear></ListItem>
+              <ListItem><Appear fid="3">Processes in field</Appear></ListItem>    
+              <ListItem><Appear fid="4">Soft skills</Appear></ListItem>              
           </List>
               
         </Slide> 
@@ -260,7 +256,104 @@ export default class extends Component {
         
           <Appear fid="1">
             <Heading size={4} caps fit textColor="primary">
-              Graduates Developers and Transformation 
+               Domain & sector knowledge
+            </Heading>
+          </Appear>
+          <Appear fid="2">
+            <Layout>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                </Heading>
+              </Fill>
+            </Layout>
+          </Appear>
+
+          <List textColor='tertiary'>
+              <ListItem><Appear fid="1">HSCIC programmes</Appear></ListItem>
+              <ListItem><Appear fid="2">Wider organisation</Appear></ListItem>
+              <ListItem><Appear fid="3">Acronyms!</Appear></ListItem>   
+          </List>
+              
+        </Slide> 
+        <Slide bgColor="secondary">
+         
+        
+          <Appear fid="1">
+            <Heading size={4} caps fit textColor="primary">
+              Industry common knowledge
+            </Heading>
+          </Appear>
+          <Appear fid="2">
+            <Layout>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                </Heading>
+              </Fill>
+            </Layout>
+          </Appear>
+
+          <List textColor='tertiary'>
+              <ListItem><Appear fid="1">Terminology</Appear></ListItem>
+              <ListItem><Appear fid="2">Common technical practices</Appear></ListItem>
+              <ListItem><Appear fid="3">Common roles & dynamics </Appear></ListItem>    
+          </List>
+              
+        </Slide> 
+        <Slide bgColor="secondary">
+        <Appear fid="1">
+            <Heading size={4} caps fit textColor="primary">
+              Processes
+            </Heading>
+          </Appear>
+          <Appear fid="2">
+            <Layout>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                </Heading>
+              </Fill>
+            </Layout>
+          </Appear>
+
+          <List textColor='tertiary'>
+              <ListItem><Appear fid="1">Best practices</Appear></ListItem>
+              <ListItem><Appear fid="2">Agile (workflows)</Appear></ListItem>
+              <ListItem><Appear fid="3">Common technical practices</Appear></ListItem>              
+              <ListItem><Appear fid="4">Common design patterns</Appear></ListItem>
+          </List>
+              
+        </Slide> 
+
+        <Slide bgColor="secondary">
+         
+        
+          <Appear fid="1">
+            <Heading size={4} caps fit textColor="primary">
+            Soft skills  
+            </Heading>
+          </Appear>
+          <Appear fid="2">
+            <Layout>
+              <Fill>
+                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                </Heading>
+              </Fill>
+            </Layout>
+          </Appear>
+
+          <List textColor='tertiary'>
+              <ListItem><Appear fid="1">First 'real' job</Appear></ListItem>
+              <ListItem><Appear fid="2">Confidence</Appear></ListItem>
+              <ListItem><Appear fid="3"> </Appear></ListItem>
+              <ListItem><Appear fid="4">Where I fit into HSCIC...</Appear></ListItem>
+          </List>
+              
+        </Slide> 
+        <Slide bgColor="secondary">
+         
+        
+          <Appear fid="1">
+            <Heading size={4} caps fit textColor="primary">
+              Graduate Developers and Transformation 
             </Heading>
           </Appear>
           <Appear fid="2">
@@ -278,8 +371,15 @@ export default class extends Component {
               <ListItem><Appear fid="3">Transferrale technical skills</Appear></ListItem>
               <ListItem><Appear fid="4">Familiar with HSCIC tech</Appear></ListItem>
               <ListItem><Appear fid="5">Familiar with projects</Appear></ListItem>
+              <ListItem><Appear fid="6">Pairing!</Appear></ListItem>
           </List>
-        </Slide> 
+        </Slide>
+         <Slide transition={["slide"]} bgColor="black">
+            <BlockQuote>
+              <Quote>If you want to go fast, go alone. If you want to go far, go together</Quote>
+              <Cite>Unknown</Cite>
+            </BlockQuote>
+          </Slide> 
        
         <Slide transition={["spin", "slide"]} bgColor="tertiary" bgImage={images.yosemite.replace("/", "")}>
           <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
