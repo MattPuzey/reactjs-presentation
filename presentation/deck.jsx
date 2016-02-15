@@ -89,26 +89,11 @@ export default class extends Component {
         </Heading> 
           <List>
             <ListItem><Appear fid="1">My Background</Appear></ListItem>
-            <ListItem><Appear fid="2">What I have learned this year</Appear></ListItem>
-            <ListItem><Appear fid="3">Where I see myself at HSCIC</Appear></ListItem>
+            <ListItem><Appear fid="2">What I have learned so far</Appear></ListItem>
+            <ListItem><Appear fid="3">Where do we fit at HSCIC?</Appear></ListItem>
           </List>
         </Slide>
-      
-        <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
-          <Image src={images.kat.replace("/", "")} margin="0px auto 40px" height="293px"/>
-          <Heading size={1} fit textColor="primary" textFont="secondary">
-            Wait what?
-          </Heading>
-        </Slide>
-
-        <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <CodePane
-            lang="javascript"
-            source={require("raw!./deck.example")}
-            margin="20px auto"
-          />
-        </Slide>
-
+    
         <Slide transition={["slide"]} bgImage={images.Choir.replace("/", "")} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={4} caps fit textColor="primary">
@@ -116,7 +101,7 @@ export default class extends Component {
             </Heading>
           </Appear>
            <List textColor='white'>
-            <ListItem><Appear fid="1">Sleepy Staffordshire town</Appear></ListItem>
+            <ListItem><Appear fid="1">Sleepy Staffordshire town (city)</Appear></ListItem>
             <ListItem><Appear fid="2">Birthplace of Samuel Johnson and Erasmus Darwin</Appear></ListItem>
             <ListItem><Appear fid="3">...(and me)</Appear></ListItem>
            </List>
@@ -140,22 +125,10 @@ export default class extends Component {
         </Appear>
         <Appear fid="3">
           <List textColor='white'>
-            <ListItem><Appear fid="1">Lasers</Appear></ListItem>
-            <ListItem><Appear fid="2">Electrodynamics</Appear></ListItem>
-            <ListItem><Appear fid="3">Thermodynamics</Appear></ListItem>
-            <ListItem><Appear fid="4">Quantum mechanics</Appear></ListItem>
-            <ListItem><Appear fid="5">Relativity</Appear></ListItem>
-            <ListItem><Appear fid="6">Stars and black holes</Appear></ListItem>
-           </List>
+            <ListItem><Appear fid="1">Lasers, Electrodynamics, Thermodynamics, Quantum mechanics, Relativity, Stars and black holes</Appear></ListItem>
+            <ListItem><Appear fid="2">Barely any programming experience</Appear></ListItem>
+          </List>
         </Appear>
-        </Slide>
-
-         <Slide transition={["slide"]} bgColor="tertiary">
-          <Heading size={1} caps fit textColor="primary">
-            Happy Birthday HSCIC graduate scheme! 
-          </Heading>
-          <Interactive/>
-
         </Slide>
 
         <Slide transition={["slide", "spin"]} bgColor="tertiary">
@@ -342,8 +315,8 @@ export default class extends Component {
 
           <List textColor='tertiary'>
               <ListItem><Appear fid="1">First 'real' job</Appear></ListItem>
-              <ListItem><Appear fid="2">Confidence</Appear></ListItem>
-              <ListItem><Appear fid="3"> </Appear></ListItem>
+              <ListItem><Appear fid="2">Confidence in ability</Appear></ListItem>
+              <ListItem><Appear fid="3">Pulling from knowledge of colleagues</Appear></ListItem>
               <ListItem><Appear fid="4">Where I fit into HSCIC...</Appear></ListItem>
           </List>
               
@@ -374,26 +347,31 @@ export default class extends Component {
               <ListItem><Appear fid="6">Pairing!</Appear></ListItem>
           </List>
         </Slide>
-         <Slide transition={["slide"]} bgColor="black">
+        <Slide transition={["slide"]} bgColor="black">
             <BlockQuote>
               <Quote>If you want to go fast, go alone. If you want to go far, go together</Quote>
               <Cite>Unknown</Cite>
             </BlockQuote>
           </Slide> 
-       
-        <Slide transition={["spin", "slide"]} bgColor="tertiary" bgImage={images.yosemite.replace("/", "")}>
-          <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-            Find me at GitHub and wordpress
-          </Heading>
-          <Heading size={5} textColor="tertiary">
-            https://github.com/MattPuzey
-          </Heading>
-          <Link href="https://github.com/MattPuzey"><Image src={images.github} margin="0px auto 40px" height="100px"/></Link>
-          <Heading size={5} textColor="tertiary">
-            https://matthewpuzeyblog.wordpress.com/
-          </Heading>
-          <Link href="matthewpuzeyblog.wordpress.com/"><Image src={images.wordpress} margin="0px auto 40px" height="80px"/></Link>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Heading>
+          Summary
+        </Heading> 
+          <List>
+            <ListItem><Appear fid="1">Technical skills</Appear></ListItem>
+            <ListItem><Appear fid="2">Industry knowledge (IT & Healthcare)</Appear></ListItem>
+            <ListItem><Appear fid="3">Great personal development</Appear></ListItem>
+          </List>
         </Slide>
+
+        <Slide transition={["slide"]} bgColor="primary">
+          
+          <Heading size={1} fit textColor="black" textFont="secondary">
+            Fin
+          </Heading>
+        </Slide>
+  
       </Deck>
     );
   }
