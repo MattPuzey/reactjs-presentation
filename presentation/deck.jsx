@@ -344,7 +344,8 @@ export default class extends Component {
               <ListItem><Appear fid="3">Transferrale technical skills</Appear></ListItem>
               <ListItem><Appear fid="4">Familiar with HSCIC tech</Appear></ListItem>
               <ListItem><Appear fid="5">Familiar with projects</Appear></ListItem>
-              <ListItem><Appear fid="6">Pairing!</Appear></ListItem>
+              <ListItem><Appear fid="6">Developer retention</Appear></ListItem>
+              <ListItem><Appear fid="7">Pairing!</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="black">
